@@ -1,169 +1,66 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberCrafters</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
 
-body {
-    font-family: "Poppins", sans-serif;
-    background-color: #011802;
-    color: #034404;
-    line-height: 1.6;
-}
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-text">
+            <h1>CyberCrafters</h1>
+            <img src="" alt="Logo.png">
+            <nav class="icons">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-/* HEADER */
-.header {
-    background: linear-gradient(135deg, #0a84ff, #0066ff);
-    text-align: center;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    color: white;
-}
+    <div class="lahi">
+        <p class="subtext">Empowering your digital lifestyle - one device at a time.</p>
+    </div>
 
-.subtext {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    color: #e0e0e0;
-}
+    <!-- BODY 1 -->
+    <section class="body2">
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Repair Services">
+        </div>
+        <div class="content-info">
+            <h2>Our Products & Services</h2>
+            <p>We offer a wide range of products, like CPUs, laptops, accessories, and essential computer parts, as well as repair services including virus removal, hardware repair, software installation, and system upgrades. Whether it’s fixing, upgrading, or building your setup, we’ve got you covered.</p>
+        </div>
+    </section>
 
+    <!-- BODY 2 -->
+    <section class="body3">
+        <h2 class="info-statement">Why Choose CyberCrafters?</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://bleuwire.com/wp-content/uploads/2019/03/computer-repair-services-1536x1024.jpg" alt="Repair Service">
+                <p><strong>Expert Repairs</strong><br>From virus removal to full system upgrades, our technicians ensure every device gets back to peak performance.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Computer Parts">
+                <p><strong>Quality Products</strong><br>We sell trusted brands and genuine computer components to meet your personal and professional needs.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Customer Support">
+                <p><strong>Customer Focus</strong><br>We value long-term relationships. Our support team ensures your satisfaction, before and after purchase.</p>
+            </div>
+        </div>
+    </section>
 
-.header h1 {
-    font-size: 2.5rem;
-    letter-spacing: 1px;
-}
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2025 CyberCrafters | Your Trusted Computer Partner</p>
+    </footer>
 
-.icons {
-    margin-top: 1rem;
-}
-
-.icons a {
-    color: white;
-    text-decoration: none;
-    margin: 0 0.8rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.icons a:hover {
-    color: #00eaff;
-}
-
-.subtext {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-/* BODY 1 */
-.body1 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 2rem;
-    padding: 3rem 2rem;
-    background: #161b22;
-}
-
-.hero img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
-.sidebar {
-    flex: 1;
-    background: #1e2633;
-    padding: 1.5rem;
-    border-radius: 10px;
-}
-
-/* BODY 2 */
-.body2 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 3rem 2rem;
-    background: #0d1117;
-    gap: 2rem;
-}
-
-.body2 img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-}
-
-.content-info {
-    flex: 1;
-    background: #1e2633;
-    padding: 1.5rem;
-    border-radius: 10px;
-}
-
-/* BODY 3 */
-.body3 {
-    background: #161b22;
-    padding: 3rem 2rem;
-    text-align: center;
-}
-
-.info-statement {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    color: #00eaff;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.card {
-    background: #1e2633;
-    border-radius: 12px;
-    width: 280px;
-    padding: 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-}
-
-/* FOOTER */
-.footer {
-    background: #0a84ff;
-    text-align: center;
-    padding: 1.5rem;
-    color: white;
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
-}
-
-/* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-    .body1, .body2 {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header h1 {
-        font-size: 2rem;
-    }
-}
+</body>
+</html>
