@@ -15,8 +15,6 @@ body {
 .header {
     background: linear-gradient(135deg, #0a84ff, #0066ff);
     text-align: center;
-    padding-bottom: 0px;
-    padding-top: 0px;
     color: white;
 }
 
@@ -247,3 +245,4 @@ body {
         margin-top: 1rem;
     }
 }
+
