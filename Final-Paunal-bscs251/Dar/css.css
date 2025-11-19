@@ -23,23 +23,37 @@ body {
 .header-text {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    align-items: center;
+    padding: 10px 20px;
 }
 
-.subtext {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    color: #e0e0e0;
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
+.logo {
+    width: 1000px;
+    height: auto;
+}
 
+.lahi {
+    text-align: center;
+}
 .header h1 {
     font-size: 2.5rem;
     letter-spacing: 1px;
+    margin: 0;  /* Ensure no extra margin */
+}
+
+.header img {
+    width: 50px;  /* Added size for logo; adjust as needed */
+    height: auto;
 }
 
 .icons {
-    margin-top: 1rem;
+    margin-top: 0;  /* Removed top margin to align with h1 */
 }
 
 .icons a {
@@ -54,10 +68,17 @@ body {
     color: #00eaff;
 }
 
-.subtext {
+.subtext-container {
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-top: 0.5rem;
+}
+
+.subtext {
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin: 0;
 }
 
 /* BODY 1 */
@@ -171,5 +192,14 @@ body {
 
     .header h1 {
         font-size: 2rem;
+    }
+
+    .header-text {
+        flex-direction: column;  /* Stack on mobile for better alignment */
+        gap: 1rem;
+    }
+
+    .subtext-container {
+        margin-top: 1rem;
     }
 }
