@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #0d1117;
+    color: #e6edf3;
+    line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, #0a84ff, #0066ff);
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: white;
+}
+
+.header-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 1000px;
+    height: auto;
+}
+
+.lahi {
+    text-align: center;
+}
+.header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin: 0;  /* Ensure no extra margin */
+}
+
+.header img {
+    width: 50px;  /* Added size for logo; adjust as needed */
+    height: auto;
+}
+
+.icons {
+    margin-top: 0;  /* Removed top margin to align with h1 */
+}
+
+.icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.8rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.icons a:hover {
+    color: #00eaff;
+}
+
+.subtext-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.subtext {
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin: 0;
+}
+
+/* BODY 1 */
+.body1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    background: #161b22;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.sidebar {
+    flex: 1;
+    background: #1e2633;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+/* BODY 2 */
+.body2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 3rem 2rem;
+    background: #0d1117;
+    gap: 2rem;
+}
+
+.body2 img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.content-info {
+    flex: 1;
+    background: #1e2633;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+/* BODY 3 */
+.body3 {
+    background: #161b22;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.info-statement {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #00eaff;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card {
+    background: #1e2633;
+    border-radius: 12px;
+    width: 280px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* FOOTER */
+.footer {
+    background: #0a84ff;
+    text-align: center;
+    padding: 1.5rem;
+    color: white;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .body1, .body2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header-text {
+        flex-direction: column;  /* Stack on mobile for better alignment */
+        gap: 1rem;
+    }
+
+    .subtext-container {
+        margin-top: 1rem;
+    }
+}
